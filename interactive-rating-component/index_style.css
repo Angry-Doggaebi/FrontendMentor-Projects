@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap'); 
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    display: grid;
+    place-content: center;
+    min-height: 100vh; 
+}
+.container{
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    background-color: hsl(213, 19%, 18%);
+    width: 350px;
+    height: 350px;
+    border-radius: 25px 25px 25px 25px;
+}
+.content{
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#star{
+    display: flex;
+    background-color: hsl(217, 17%, 21%);
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+p{
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: 14px;
+}
+.buttons{
+    display: flex;
+    flex-flow: row wrap; /*아이탬의 배치 방향과 줄바꿈 여부*/
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.btn{
+    background-color: hsl(217, 17%, 21%);
+    color: hsl(217, 12%, 63%);
+    border: none;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 50%
+}
+.btn:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+.btn:focus{
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+#btnsubmit{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border: none;
+    height: 40px;
+    border-radius: 25px 25px 25px 25px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+#btnsubmit:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
