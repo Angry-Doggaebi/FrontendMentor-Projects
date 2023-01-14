@@ -7,6 +7,7 @@ body{
 .container {
     display: flex;
     flex-direction: row;
+    height: 555px;
 
 }
 .left-side{
@@ -44,21 +45,29 @@ p{
     line-height: 25px;
     margin-bottom: 40px;
 }
-#notice{
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    color: hsl(0, 93%, 68%);
-}
-#info{
-    
+.info{
+    height: 45px;
 }
 #email{
-    width: 390px;
+    width: 344px;
     height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+
     border: 1px solid hsl(0, 36%, 70%);
     border-radius: 25px 25px 25px 25px;
+
     background-color: transparent;
-    
+
+    color: hsl(0, 47%, 89%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+#email:focus{
+    border-color: hsl(0, 36%, 70%);
+    outline: none;
+
+    color: rgb(70, 61, 61);
 }
 #btnsubmit{
     position: relative;
@@ -68,9 +77,32 @@ p{
     width: 75px;
     height: 44px;
 
-    border: 1px solid hsl(0, 36%, 70%);
+    border: 0px solid hsl(0, 36%, 70%);
     border-radius: 25px 25px 25px 25px;
+    background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+#btnsubmit:hover{
+    background: hsl(0, 80%, 86%);
+    box-shadow: 0px 10px 15px hsl(0, 36%, 70%);
+}
+label{
+    position: relative;
+    bottom: 56px;
+    left: 274px;
+}
+#notice{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: hsl(0, 93%, 68%);
+    padding-left: 25px;
+}
+#error{
+    opacity: 0;
+    position: relative;
+    bottom: 54px;
+    left: 193px;
 }
 img{
-    height: 600px;
+    height: 555px;
 }
