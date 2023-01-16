@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(242, 229, 229);
+
+    display: flex;
+    flex-flow: column wrap;
+    place-content: center;
+}
+.box{
+    width: 700px;
+    height: 100%;
+    background-color: white;
+    
+}
