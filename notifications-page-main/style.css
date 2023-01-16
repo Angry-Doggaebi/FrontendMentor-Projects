@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(242, 229, 229);
+    background-color: rgb(229, 233, 242);
 
     display: flex;
     flex-flow: column wrap;
@@ -9,5 +9,46 @@ body{
     width: 700px;
     height: 100%;
     background-color: white;
+    border-radius: 20px;
     
+}
+.container{
+    margin: 20px;
+}
+h1{
+    display: inline;
+}
+.notifications{
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    /* grid-template-rows: repeat(7, 1fr); */
+    row-gap: 10px;
+}
+.imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(233, 233, 248);
+    border-radius: 10px 0px 0px 10px;
+}
+img{
+    width: 50px;
+}
+.stories{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgb(233, 233, 248);
+    border-radius: 0px 10px 10px 0px;
+}
+.name{
+    font-weight: bold;
+    text-decoration-line: none;
+    color: black;
+}
+.name:hover{
+    color: hsl(219, 85%, 26%);
+}
+.readmark{
+    color: hsl(1, 90%, 64%);
 }
