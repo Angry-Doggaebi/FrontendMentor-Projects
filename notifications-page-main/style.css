@@ -19,10 +19,15 @@ h1{
     display: inline;
 }
 .notifications{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.person{
     display: grid;
     grid-template-columns: 70px 1fr;
     /* grid-template-rows: repeat(7, 1fr); */
-    row-gap: 10px;
+    row-gap: 5px;
 }
 .imgs{
     display: flex;
@@ -51,4 +56,13 @@ img{
 }
 .readmark{
     color: hsl(1, 90%, 64%);
+}
+.messages{
+    background-color: rgb(197, 210, 252);
+    border-radius: 10px;
+    
+    display: none;
+}
+#emptybox{
+    background-color: transparent;
 }

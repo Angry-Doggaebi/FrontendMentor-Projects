@@ -14,6 +14,8 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,34 +27,61 @@
       <span>Mark all as read</span>
 
       <div class="notifications">
-        <picture class="imgs">
-          <!-- <source srcset="./assets/images/imagesavatar-angela-gray.webp" type="image/webp">
-          <source srcset="./assets/images/imagesavatar-angela-gray.png" type="image/png"> -->
-          <img src="./assets/images/avatar-angela-gray.png" alt="No image">
-        </picture>
-        <div class="stories">
-          <div class="name_detail">
-            <a class="name" href="">Mark Webber</a> 
-            reacted to your recent post 
-            <a href="">My first tournament today!</a>
-            <span class="readmark">&#9679;</span>
-          </div>
+        <div class="person" id="1">
+          <picture class="imgs">
+            <!-- <source srcset="./assets/images/imagesavatar-angela-gray.webp" type="image/webp">
+            <source srcset="./assets/images/imagesavatar-angela-gray.png" type="image/png"> -->
+            <img src="./assets/images/avatar-angela-gray.png" alt="No image">
+          </picture>
+          <div class="stories">
+            <div class="name_detail">
+              <a class="name" href="">Mark Webber</a> 
+              reacted to your recent post 
+              <a href="">My first tournament today!</a>
+              <span class="readmark">&#9679;</span>
+            </div>
           
-          <time>1m ago</time>
+            <time>1m ago</time>
+          </div>
         </div>
         
-
-        <picture class="imgs">
-          <img src="./assets/images/avatar-angela-gray.png" alt="No image">
-        </picture>
-        <div class="stories">
-          <div class="name_detail">
-            <a class="name" href="">Angela Gray</a> followed you
-            <span class="readmark">&#9679;</span>
-          </div>
+        <div class="person" id="2">
+          <picture class="imgs">
+            <img src="./assets/images/avatar-angela-gray.png" alt="No image">
+          </picture>
+          <div class="stories">
+            <div class="name_detail">
+              <a class="name" href="">Angela Gray</a> followed you
+              <span class="readmark">&#9679;</span>
+            </div>
          
-          <time>5m ago</time>
+            <time>5m ago</time>
+          </div>
+          <div class="messages" id="emptybox"></div>
+          <p class="messages">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+          </p>
         </div>
+        
+        
+        <div class="person" id="3">
+          <picture class="imgs">
+           <img src="./assets/images/avatar-angela-gray.png" alt="No image">
+          </picture>
+          <div class="stories">
+            <div class="name_detail">
+              <a class="name" href="">Angela Gray</a> followed you
+              <span class="readmark">&#9679;</span>
+            </div>
+         
+            <time>5m ago</time>
+          </div>
+          <div class="messages" id="emptybox"></div>
+          <p class="messages">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+          </p>
+        </div>
+        
         
 
         <!-- <a href="">Jacob Thompson</a> has joined your group Chess Club
