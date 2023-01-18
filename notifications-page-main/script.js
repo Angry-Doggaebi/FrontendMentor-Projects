@@ -23,3 +23,15 @@ $(document).ready(function(){
     });
 });
 
+
+$(document).ready(function(){
+    var num = $('.readmark').length; //리드마크 개수
+    var count = 0; 
+    document.getElementById('numOfNoti').innerHTML = num; //알림 개수
+    $(".notifications > .person").click(function(){ //.person을 클릭하면
+        count++;
+        var valNum = num-count;
+        document.getElementById('numOfNoti').innerHTML = valNum;
+    });
+});
+

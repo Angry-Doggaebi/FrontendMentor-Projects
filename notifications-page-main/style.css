@@ -13,10 +13,15 @@ body{
     
 }
 .container{
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 h1{
-    display: inline;
+    display: inline-block;
+    margin-bottom: 25px;
+    font: 30px;
 }
 .notifications{
     display: flex;
@@ -28,14 +33,16 @@ h1{
     grid-template-columns: 70px 1fr;
     /* grid-template-rows: repeat(7, 1fr); */
     row-gap: 5px;
+
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 10px;
+
+    padding: 10px;
 }
 .imgs{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-color: rgb(233, 233, 248);
-    border-radius: 10px 0px 0px 10px;
 }
 img{
     width: 50px;
@@ -43,8 +50,7 @@ img{
 .stories{
     display: flex;
     flex-flow: column wrap;
-    background-color: rgb(233, 233, 248);
-    border-radius: 0px 10px 10px 0px;
+    justify-content: center;
 }
 .name{
     font-weight: bold;
@@ -52,14 +58,19 @@ img{
     color: black;
 }
 .name:hover{
-    color: hsl(219, 85%, 26%);
+    color: hsl(219, 64%, 46%);
 }
 .readmark{
+    font-size: 11px;
     color: hsl(1, 90%, 64%);
+}
+time{
+    color: gray;
 }
 .messages{
     background-color: rgb(197, 210, 252);
-    border-radius: 10px;
+    border-radius: 5px;
+    padding: 10px;
     
     display: none;
 }

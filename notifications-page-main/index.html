@@ -23,10 +23,11 @@
     <div class="container">
 
       <h1>Notifications</h1>
-      <span>3</span>
+      <span id="numOfNoti">0</span>
       <span>Mark all as read</span>
 
-      <div class="notifications">
+      <div class="notifications" id="notifications">
+
         <div class="person" id="1">
           <picture class="imgs">
             <!-- <source srcset="./assets/images/imagesavatar-angela-gray.webp" type="image/webp">
@@ -34,7 +35,7 @@
             <img src="./assets/images/avatar-angela-gray.png" alt="No image">
           </picture>
           <div class="stories">
-            <div class="name_detail">
+            <div class="detail">
               <a class="name" href="">Mark Webber</a> 
               reacted to your recent post 
               <a href="">My first tournament today!</a>
@@ -50,56 +51,93 @@
             <img src="./assets/images/avatar-angela-gray.png" alt="No image">
           </picture>
           <div class="stories">
-            <div class="name_detail">
-              <a class="name" href="">Angela Gray</a> followed you
+            <div class="detail">
+              <a class="name" href="">Angela Gray</a> 
+              followed you
               <span class="readmark">&#9679;</span>
             </div>
-         
             <time>5m ago</time>
           </div>
-          <div class="messages" id="emptybox"></div>
-          <p class="messages">
-            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
-          </p>
         </div>
-        
         
         <div class="person" id="3">
           <picture class="imgs">
-           <img src="./assets/images/avatar-angela-gray.png" alt="No image">
+            <img src="./assets/images/avatar-angela-gray.png" alt="No image">
           </picture>
           <div class="stories">
-            <div class="name_detail">
-              <a class="name" href="">Angela Gray</a> followed you
+            <div class="detail">
+              <a class="name" href="">Jacob Thompson</a>
+              has joined your group 
+              <a href="">Chess Club</a>
+            <span class="readmark">&#9679;</span>
+            </div>
+            <time>1 day ago</time>
+          </div>
+        </div>
+        
+        <div class="person" id="4">
+          <picture class="imgs">
+            <img src="./assets/images/avatar-angela-gray.png" alt="No image">
+          </picture>
+          <div class="stories">
+            <div class="detail">
+              <a class="name" href="">Rizky Hasanuddin</a>
+              sent you a private message
               <span class="readmark">&#9679;</span>
             </div>
-         
-            <time>5m ago</time>
+            <time>5 day ago</time>
           </div>
           <div class="messages" id="emptybox"></div>
           <p class="messages">
             Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
           </p>
         </div>
+
+        <div class="person" id="5">
+          <picture class="imgs">
+            <img src="./assets/images/avatar-angela-gray.png" alt="No image">
+          </picture>
+          <div class="stories">
+            <div class="detail">
+              <a class="name" href="">Kimberly Smith</a> 
+              commented on your picture
+              <span class="readmark">&#9679;</span>
+            </div>
+            <time>1 week ago</time>
+          </div>
+        </div>
+    
+        <div class="person" id="6">
+          <picture class="imgs">
+            <img src="./assets/images/avatar-angela-gray.png" alt="No image">
+          </picture>
+          <div class="stories">
+            <div class="detail">
+              <a class="name" href="">Nathan Peterson</a> 
+              reacted to your recent post 5 end-game strategies to increase your win rate
+              <span class="readmark">&#9679;</span>
+            </div>
+            <time>2 week ago</time>
+          </div>
+        </div>
         
-        
+        <div class="person" id="7">
+          <picture class="imgs">
+            <img src="./assets/images/avatar-angela-gray.png" alt="No image">
+          </picture>
+          <div class="stories">
+            <div class="detail">
+              <a class="name" href="">Anna Kim</a>
+              left the group
+              <a>Chess Club</a>
+              <span class="readmark">&#9679;</span>
+            </div>
+            <time>2 week ago</time>
+          </div>
+        </div>
 
-        <!-- <a href="">Jacob Thompson</a> has joined your group Chess Club
-        <time>1 day ago</time>
+      </div class="notifications">
 
-        <a href="">Rizky Hasanuddin</a> sent you a private message
-        <time>5 day ago</time>
-        Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
-
-        <a href="">Kimberly Smith<a> commented on your picture
-        <time>1 week ago</time>
-
-        <a href="">Nathan Peterson</a> reacted to your recent post 5 end-game strategies to increase your win rate
-        <time>2 week ago</time>
-
-        <a href="">Anna Kim</a> left the group <a>Chess Club</a>
-        <time>2 week ago</time> -->
-      </div>
     </div>
   </div>
 
