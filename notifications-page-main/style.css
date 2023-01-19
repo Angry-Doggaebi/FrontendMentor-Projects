@@ -18,10 +18,22 @@ body{
     margin-left: 40px;
     margin-right: 40px;
 }
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 h1{
     display: inline-block;
-    margin-bottom: 25px;
-    font: 30px;
+    font-size: 25px;
+}
+#numOfNoti{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(42, 42, 160);
+    color: white;
+    border-radius: 5px;
+
 }
 .notifications{
     display: flex;
@@ -60,6 +72,10 @@ img{
 .name:hover{
     color: hsl(219, 64%, 46%);
 }
+p{
+    display: inline;
+    color: hsl(219, 12%, 42%);
+}
 .readmark{
     font-size: 11px;
     color: hsl(1, 90%, 64%);
@@ -68,7 +84,7 @@ time{
     color: gray;
 }
 .messages{
-    background-color: rgb(197, 210, 252);
+    background-color: hsl(211, 68%, 94%);
     border-radius: 5px;
     padding: 10px;
     
