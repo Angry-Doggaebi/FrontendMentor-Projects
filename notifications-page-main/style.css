@@ -35,6 +35,13 @@ h1{
     border-radius: 5px;
 
 }
+#markAll{
+    text-decoration-line: none;
+    color: gray;
+}
+#markAll:hover{
+    color: rgb(42, 42, 160);
+}
 .notifications{
     display: flex;
     flex-direction: column;
@@ -70,11 +77,16 @@ img{
     color: black;
 }
 .name:hover{
-    color: hsl(219, 64%, 46%);
+    color: hsl(219, 85%, 26%);
 }
 p{
     display: inline;
     color: hsl(219, 12%, 42%);
+}
+.noti_link{
+    font-weight: bold;
+    text-decoration-line: none;
+    color: hsl(219, 85%, 26%);
 }
 .readmark{
     font-size: 11px;
