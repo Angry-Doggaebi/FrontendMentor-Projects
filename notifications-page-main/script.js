@@ -56,4 +56,17 @@ $(document).ready(function(){
             };
         };
     });
+
+    //mark all as read 누르면
+    $("#markAll").click(function(){
+        //모든 알림 읽음 표시
+        $(".person").css("backgroundColor", "white");
+        $(".person").find(".readmark").css("display", "none");
+        //모든 배열 삭제
+        ids.splice(0);
+        //알림개수 = 배열개수
+        num = $(ids).length;
+        document.getElementById('numOfNoti').innerHTML = num;
+    });
 });
+
