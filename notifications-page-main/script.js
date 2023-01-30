@@ -1,20 +1,3 @@
-//모든 슬라이드가 함께 작동
-// $(document).ready( function() {
-//     $( '.person' ).click( function() {
-//         $('.messages').slideToggle(200);
-//     });
-// });
-
-
-//선택한 슬라이드만 작동
-// $(document).ready(function(){
-//     $(".notifications > .person").click(function(){
-//         $(this).children(".messages").slideToggle(200);
-//     });
-// });
-
-
-
 //선택한 슬라이드, 배경색, 리드마크, 링크된 페이지 작동
 $(document).ready(function(){
     $(".notifications > .person").click(function(){
