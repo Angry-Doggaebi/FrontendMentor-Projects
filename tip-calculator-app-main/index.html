@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <h1>SPLI<br>TTER</h1>
+  
+  <div class="container">
+    <div class="leftside">
+      <h2>Bill</h2>
+      <input type="number" >
+
+      <h2>Select Tip %</h2>
+      <div class="btns">
+        <div class="btnLine">
+          <input type="button" value="5%" class="btn">
+          <input type="button" value="10%" class="btn">
+          <input type="button" value="15%" class="btn">
+        </div>
+        
+        <div class="btnLine">
+          <input type="button" value="25%" class="btn">
+          <input type="button" value="50%" class="btn">
+          <input type="number" value="Custom" class="btnNum">
+        </div>
+      </div class="btns">
+      
+      <h2>Number of people</h2>
+      <input type="number" >
+    </div class="leftside">
+
+    <div class="rightside">
+      <div class="result">
+        <div class="words">
+          <h2>Tip Amount</h2>
+          / person
+        </div>
+        
+        <h3><span>$0.00</span></h3>
+      </div>
+      
+      <div class="result">
+        <div class="words">
+          <h2>Total</h2>
+          / person
+        </div>
+        
+        <h3><span>$0.00</span></h3>
+      </div>
+      
+
+      <input type="button" value="Reset" id="reset">
+    </div class="rightside">
+  </div class="container">
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Angry-doggaebi</a>.
+  </div>
+</body>
+</html>
