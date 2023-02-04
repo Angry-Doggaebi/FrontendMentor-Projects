@@ -6,3 +6,4 @@
 - 01/11 Interactive rating component
 - 01/14 Base apparelcomng soon master
 - 01/16 - 01/21 Notifications page main
+- 02/04 ~ing Tip calculator app main
