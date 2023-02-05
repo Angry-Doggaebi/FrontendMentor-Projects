@@ -7,6 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="script.js"></script>
 
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -21,7 +23,7 @@
   <div class="container">
     <div class="leftside">
       <h2>Bill</h2>
-      <input type="number" >
+      <input type="number" id="billNum" value="">
 
       <h2>Select Tip %</h2>
       <div class="btns">
@@ -30,7 +32,6 @@
           <input type="button" value="10%" class="btn">
           <input type="button" value="15%" class="btn">
         </div>
-        
         <div class="btnLine">
           <input type="button" value="25%" class="btn">
           <input type="button" value="50%" class="btn">
@@ -39,7 +40,7 @@
       </div class="btns">
       
       <h2>Number of people</h2>
-      <input type="number" >
+      <input type="number" id="peopleNum">
     </div class="leftside">
 
     <div class="rightside">
@@ -49,7 +50,7 @@
           / person
         </div>
         
-        <h3><span>$0.00</span></h3>
+        <h3><span id="tipAmount">$0.00</span></h3>
       </div>
       
       <div class="result">
@@ -58,7 +59,7 @@
           / person
         </div>
         
-        <h3><span>$0.00</span></h3>
+        <h3><span id="total">$0.00</span></h3>
       </div>
       
 

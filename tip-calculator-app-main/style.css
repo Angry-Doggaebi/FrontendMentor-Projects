@@ -34,6 +34,9 @@ body{
     height: 36px;
     padding: 1px 2px 1px 2px;
 }
+.btn:focus{
+    background-color: hsl(172, 67%, 45%);
+}
 .btnNum{
     width: 60px;
     height: 30px;
