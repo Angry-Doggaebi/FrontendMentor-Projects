@@ -23,24 +23,24 @@
   <div class="container">
     <div class="leftside">
       <h2>Bill</h2>
-      <input type="number" id="billNum" value="">
+      <input type="number" id="billNum" placeholder="0">
 
       <h2>Select Tip %</h2>
       <div class="btns">
         <div class="btnLine">
-          <input type="button" value="5%" class="btn">
-          <input type="button" value="10%" class="btn">
-          <input type="button" value="15%" class="btn">
+          <input type="button" value="5%" class="btn" onclick="btnClickEvent('0.05')">
+          <input type="button" value="10%" class="btn" onclick="btnClickEvent('0.1')">
+          <input type="button" value="15%" class="btn" onclick="btnClickEvent('0.15')">
         </div>
         <div class="btnLine">
-          <input type="button" value="25%" class="btn">
-          <input type="button" value="50%" class="btn">
-          <input type="number" value="Custom" class="btnNum">
+          <input type="button" value="25%" class="btn" onclick="btnClickEvent('0.25')">
+          <input type="button" value="50%" class="btn" onclick="btnClickEvent('0.5')">
+          <input type="number" placeholder="Custom" class="btnNum" id="btnNum">
         </div>
       </div class="btns">
       
       <h2>Number of people</h2>
-      <input type="number" id="peopleNum">
+      <input type="number" id="peopleNum" placeholder="0">
     </div class="leftside">
 
     <div class="rightside">
