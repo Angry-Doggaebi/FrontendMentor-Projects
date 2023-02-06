@@ -28,14 +28,19 @@
       <h2>Select Tip %</h2>
       <div class="btns">
         <div class="btnLine">
-          <input type="button" value="5%" class="btn" onclick="btnClickEvent('0.05')">
-          <input type="button" value="10%" class="btn" onclick="btnClickEvent('0.1')">
-          <input type="button" value="15%" class="btn" onclick="btnClickEvent('0.15')">
+          <input type="radio" id="5%" class="btn" name="btn" onclick="btnClickEvent('0.05')">
+          <label for="5%">5%</label>
+          <input type="radio" id="10%" class="btn" name="btn" onclick="btnClickEvent('0.1')">
+          <label for="10%">10%</label>
+          <input type="radio" id="15%" class="btn" name="btn" onclick="btnClickEvent('0.15')">
+          <label for="15%">15%</label>
         </div>
         <div class="btnLine">
-          <input type="button" value="25%" class="btn" onclick="btnClickEvent('0.25')">
-          <input type="button" value="50%" class="btn" onclick="btnClickEvent('0.5')">
-          <input type="number" placeholder="Custom" class="btnNum" id="btnNum">
+          <input type="radio" id="25%" class="btn" name="btn" onclick="btnClickEvent('0.25')">
+          <label for="25%">25%</label>
+          <input type="radio" id="50%" class="btn" name="btn" onclick="btnClickEvent('0.5')">
+          <label for="50%">50%</label>
+          <input type="number" placeholder="Custom" class="custom" id="custom">
         </div>
       </div class="btns">
       
@@ -47,7 +52,7 @@
       <div class="result">
         <div class="words">
           <h2>Tip Amount</h2>
-          / person
+          <span>/ person</span>
         </div>
         
         <h3><span id="tipAmount">$0.00</span></h3>
@@ -56,14 +61,14 @@
       <div class="result">
         <div class="words">
           <h2>Total</h2>
-          / person
+          <span>/ person</span>
         </div>
         
         <h3><span id="total">$0.00</span></h3>
       </div>
       
 
-      <input type="button" value="Reset" id="reset">
+      <input type="button" value="RESET" id="reset">
     </div class="rightside">
   </div class="container">
   
