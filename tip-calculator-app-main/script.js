@@ -20,26 +20,42 @@ $(document).ready(function(){
     });
 });
 
-//버튼 클릭시 사람 수 입력여부에 따른 계산식 함수
-function calculationDependingOnPeopleNum(tipPercentage){
+//최종 결과 계산식
+function FinalResultCalculation(peopleNewValue, billNewValue){
+
+    //tip amount
+    var tipAmount = billNewValue/peopleNewValue*tipPercent;
+    var tipAmount = Math.floor(tipAmount*100)/100;//소수점 아래 두 자리 이하 버림
+    document.getElementById('tipAmount').innerHTML = '$'+tipAmount;
+
+    //total
+    var total = billNewValue/peopleNewValue+tipAmount;
+    document.getElementById('total').innerHTML = '$'+total.toFixed(2); //소수점 아래 2자리 제한(반올림)
+}
+
+
+//tip 입력시 사람 수 입력 여부에 따른 결과값 계산식 함수
+function calculationDependingOnPeopleNum(tipPercent){
     //입력한 사람 수
     var peopleNewValue = document.getElementById('peopleNum').value;
     //입력한 bill 값
     var billNewValue = document.getElementById('billNum').value;
 
     if (peopleNewValue == ""){ //사람 수 입력 안 한 경우
+        peopleNewValue=1;
+        
         //tip amount
-        var tipAmount = billNewValue*tipPercentage;
+        var tipAmount = billNewValue/peopleNewValue*tipPercent;
         var tipAmount = Math.floor(tipAmount*100)/100;//소수점 아래 두 자리 이하 버림
         document.getElementById('tipAmount').innerHTML = '$'+tipAmount;
 
         //total
-        var total = parseFloat(billNewValue)+parseFloat(tipAmount);
+        var total = billNewValue/peopleNewValue+tipAmount;
         document.getElementById('total').innerHTML = '$'+total.toFixed(2); //소수점 아래 2자리 제한(반올림)
 
     } else { //사람 수 입력한 경우
         //tip amount
-        var tipAmount = billNewValue/peopleNewValue*tipPercentage;
+        var tipAmount = billNewValue/peopleNewValue*tipPercent;
         var tipAmount = Math.floor(tipAmount*100)/100;
         document.getElementById('tipAmount').innerHTML = '$'+tipAmount;
 
@@ -50,13 +66,24 @@ function calculationDependingOnPeopleNum(tipPercentage){
     };
 }
 
+
 //button
 function btnClickEvent(tipPercentage){
     //전역변수 값 변경
     tipPercent = tipPercentage; 
+    //입력한 사람 수
+    var peopleNewValue = document.getElementById('peopleNum').value;
+    //입력한 bill 값
+    var billNewValue = document.getElementById('billNum').value;
 
-    calculationDependingOnPeopleNum(tipPercentage);
+    if (peopleNewValue == ""){ //사람 수 입력 안 한 경우
+        peopleNewValue=1;
+        
+        FinalResultCalculation(peopleNewValue, billNewValue)
 
+    } else { //사람 수 입력한 경우
+        FinalResultCalculation(peopleNewValue, billNewValue)
+    };
 };
 
 //custom
@@ -66,8 +93,19 @@ $(document).ready(function(){
         var tipPercentage = this.value * 0.01;
         //전역변수 값 변경
         tipPercent = tipPercentage; 
+        //입력한 사람 수
+        var peopleNewValue = document.getElementById('peopleNum').value;
+        //입력한 bill 값
+        var billNewValue = document.getElementById('billNum').value;
 
-        calculationDependingOnPeopleNum(tipPercentage);
+        if (peopleNewValue == ""){ //사람 수 입력 안 한 경우
+            peopleNewValue=1;
+            
+            FinalResultCalculation(peopleNewValue, billNewValue)
+
+        } else { //사람 수 입력한 경우
+            FinalResultCalculation(peopleNewValue, billNewValue)
+        };
     });
 });
 
@@ -98,19 +136,26 @@ $(document).ready(function(){
         var peopleNewValue = this.value;
         // 입력한 bill값 
         var billNewValue = document.getElementById('billNum').value;
+        // 공백 체크
+        var blankCheck = /^\s+|\s+$/g;
 
         if (tipPercent == null){ //버튼을 안 눌렀을 경우  
             document.getElementById('total').innerHTML = '$'+billNewValue/peopleNewValue;
             document.getElementById('tipAmount').innerHTML = '$'+0.00;
         } else { //버튼 누른 경우
-            //tip amount 계산 후 변수에 입력 및 출력
-            var tipAmount = billNewValue/peopleNewValue*tipPercent;
-            var tipAmount = Math.floor(tipAmount*100)/100;
-            document.getElementById('tipAmount').innerHTML = '$'+tipAmount.toFixed(2);
+            if (peopleNewValue.replace( blankCheck, '' ) == ""){ //사람수 입력x
+                peopleNewValue=1;
 
-            //total 계산 후 변수에 입력, '$'문자열과 함께 출력
-            var total =billNewValue/peopleNewValue+tipAmount;
-            document.getElementById('total').innerHTML = '$'+total.toFixed(2);
+                FinalResultCalculation(peopleNewValue, billNewValue)
+
+            }
+            else if(peopleNewValue == 0){ //0입력시
+                document.getElementById('tipAmount').innerHTML = '$0.00';
+                document.getElementById('total').innerHTML = '$0.00';
+            }
+            else { //평범한 숫자 입력시
+                FinalResultCalculation(peopleNewValue, billNewValue)
+            };
         }; 
     });
 });
