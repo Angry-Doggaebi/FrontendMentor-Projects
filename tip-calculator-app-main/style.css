@@ -72,8 +72,8 @@ body{
 
 /*btnLine의 손자 input이 체크되었을 때 인접label에 효과*/
 .btnLine input:checked+label {
-  background-color: hsl(185, 41%, 84%);
-  color: hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
 }
 
 #custom{

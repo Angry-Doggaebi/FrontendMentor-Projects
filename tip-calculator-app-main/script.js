@@ -70,9 +70,24 @@ $(document).ready(function(){
         calculationDependingOnPeopleNum(tipPercentage);
     });
 });
-// function customClickEvent(){
-//     
-// };
+
+//custom click event
+//radio button 클릭 후 custom 클릭 시 버튼의 클릭 상태 디자인이 계속 활성화되어있는 문제 대비
+function customClickEvent(){
+
+    // // 체크 상태 확인
+    // document.querySelector('input[name="btn"]').checked; 
+    // // 체크된 값 console에 반영
+    // var btnValue = document.querySelector('input[name="btn"]:checked').value; 
+    // console.log(btnValue);
+
+    // 체크된 버튼 초기화
+    var ladioReset = document.getElementsByName('btn');
+    for(var i = 0; i<5; i++){
+        ladioReset[i].checked = false;
+    };
+    
+};
 
 //Number of people
 //button, custom 값 입력받아 전역변수로 바꾸어놓은 변수 tipPercent 사용 (사람 수를 팁 금액보다 나중에 선택하는 경우에도 작동하도록)
