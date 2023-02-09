@@ -41,7 +41,7 @@ body{
     font-size: 18px;
     color: hsl(183, 100%, 15%);
 }
-#billNum:focus, #peopleNum:focus{
+#billNum:focus, #peopleNum:focus, #custom:focus{
     /* 크롬브라우저에서 입력창에 생기는 검은 선 제거 */
     outline: none; 
     border: 2px solid hsl(172, 67%, 45%);
@@ -75,9 +75,7 @@ body{
   background-color: hsl(185, 41%, 84%);
   color: hsl(183, 100%, 15%);
 }
-.btn:focus{
-    background-color: hsl(172, 67%, 45%);
-}
+
 #custom{
     width: 75px;
     height: 35px;

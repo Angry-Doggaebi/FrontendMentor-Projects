@@ -20,6 +20,7 @@
 <body>
   <h1>SPLI<br>TTER</h1>
   
+  <form id="frm-reset">
   <div class="container">
     <div class="leftside">
       <h2>Bill</h2>
@@ -40,7 +41,7 @@
           <label for="25%">25%</label>
           <input type="radio" id="50%" class="btn" name="btn" onclick="btnClickEvent('0.5')">
           <label for="50%">50%</label>
-          <input type="number" placeholder="Custom" class="custom" id="custom">
+          <input type="number" placeholder="Custom" class="custom" id="custom" onclick="customClickEvent()">
         </div>
       </div class="btns">
       
@@ -68,9 +69,10 @@
       </div>
       
 
-      <input type="button" value="RESET" id="reset">
+      <input type="reset" value="RESET" id="reset" onclick="resetEvent()">
     </div class="rightside">
   </div class="container">
+</form>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
