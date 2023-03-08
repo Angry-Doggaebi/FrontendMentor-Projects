@@ -3,6 +3,7 @@
 ## 2023
 
 - 01/05 Product preview card component<br>
+<img width="40%" src="https://user-images.githubusercontent.com/120698922/223743210-a3779d86-1a08-4f44-ba3f-a47bc2821b83.jpeg"/><br>
 - 01/11 Interactive rating component<br>
 <img width="40%" src="https://user-images.githubusercontent.com/120698922/223134775-5d8216a7-2019-4641-88d6-e88e49a265fd.png"/><br>
 - 01/14 Base apparelcomng soon master<br>
