@@ -11,5 +11,4 @@
 - 01/16 ~ 01/21 Notifications page main<br>
 <img width="40%" src="https://user-images.githubusercontent.com/120698922/223135700-4694eaed-b5da-4b17-801a-bead76644c99.png"/><br>
 - 02/04 ~ 02/10 Tip calculator app main<br>
-- 02/12 Tip calculator app main - Fixed new issues found<br>
 <img width="40%" src="https://user-images.githubusercontent.com/120698922/223135236-945b049a-c2e4-43c8-831b-e78dfa2137b4.png"/><br>
