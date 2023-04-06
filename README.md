@@ -16,6 +16,7 @@
 
 - 01/16 ~ 01/21 Notifications page main<br>
 설명: https://itgoblin.tistory.com/22<br>
+Demo: https://angrydoggaebi.github.io/FrontendMentor-notifications-page-main/<br>
 <img width="40%" src="https://user-images.githubusercontent.com/120698922/223135700-4694eaed-b5da-4b17-801a-bead76644c99.png"/><br>
 
 - 02/04 ~ 02/10 Tip calculator app main<br>
